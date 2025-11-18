@@ -35,7 +35,7 @@ describe("calculateAmount", () => {
 });
 
 describe("calculateAmount", () => {
-  it("calculates correct values for valid input, that is: Infite deposit and 5% interest rate with normal tax", () => {
+  it("calculates correct values for invalid input, that is: Infite deposit and 5% interest rate with normal tax", () => {
     const result = calculateAmount(Infinity, 5, 0.15);
     expect(result).toEqual({
       interest: 0,
@@ -46,7 +46,7 @@ describe("calculateAmount", () => {
 });
 
 describe("calculateAmount", () => {
-  it("calculates correct values for valid input, that is: NaN deposit and 5% interest rate with normal tax", () => {
+  it("calculates correct values for invalid input, that is: NaN deposit and 5% interest rate with normal tax", () => {
     const result = calculateAmount(NaN, 5, 0.15);
     expect(result).toEqual({
       interest: 0,
@@ -57,7 +57,7 @@ describe("calculateAmount", () => {
 });
 
 describe("calculateAmount", () => {
-  it("calculates correct values for valid input, that is: 0k deposit and NaN% interest rate with normal tax", () => {
+  it("calculates correct values for invalid input, that is: 0k deposit and NaN% interest rate with normal tax", () => {
     const result = calculateAmount(10_000, NaN, 0.15);
     expect(result).toEqual({
       interest: 0,
