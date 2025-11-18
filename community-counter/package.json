@@ -1,5 +1,5 @@
 {
-  "name": "banks",
+  "name": "community-counter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,15 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "vitest"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.16",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.16",
-    "vitest": "^4.0.10"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
