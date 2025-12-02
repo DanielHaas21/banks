@@ -115,12 +115,14 @@ export default function App() {
                 </p>
               </div>
               <div>
-                <p>Daň ({taxRate * 100}%):&nbsp;</p>
-                <strong>{formatToCZK(selected.tax)}</strong>
+                <p>
+                  Daň ({taxRate * 100}%):&nbsp;
+                  <strong>{formatToCZK(selected.tax)}</strong>
+                </p>
               </div>
               <div>
                 <p>
-                  Celkem po 1 roce:
+                  Celkem po 1 roce:&nbsp;
                   <strong>{formatToCZK(selected.total)}</strong>
                 </p>
               </div>
