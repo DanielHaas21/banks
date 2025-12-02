@@ -110,14 +110,19 @@ export default function App() {
             </p>
             <div className="mt-4 space-y-2 text-gray-800">
               <div>
-                Úroky: <strong>{formatToCZK(selected.interest)}</strong>
+                <p>
+                  Úroky: <strong>{formatToCZK(selected.interest)}</strong>
+                </p>
               </div>
               <div>
-                Daň ({taxRate * 100}%):&nbsp;
+                <p>Daň ({taxRate * 100}%):&nbsp;</p>
                 <strong>{formatToCZK(selected.tax)}</strong>
               </div>
               <div>
-                Celkem po 1 roce: <strong>{formatToCZK(selected.total)}</strong>
+                <p>
+                  Celkem po 1 roce:
+                  <strong>{formatToCZK(selected.total)}</strong>
+                </p>
               </div>
             </div>
           </div>
