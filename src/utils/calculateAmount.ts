@@ -19,11 +19,11 @@ export function calculateAmount(
       total: 0,
     };
   }
-  const interest = amount * (ratePercent / 100);
+  const interest: number = amount * (ratePercent / 100);
 
-  const tax = interest * taxRate;
+  const tax: number = interest * taxRate;
 
-  const total = amount + interest - tax;
+  const total: number = amount + interest - tax;
 
   if (
     !Number.isFinite(interest) ||

@@ -13,8 +13,8 @@ export default function App() {
   const [taxRate, setTaxRate] = useState<taxRate>(0.15);
 
   // safe input checking and converting
-  const parsedAmount = parseFloat(amountInput);
-  const amount = Number.isFinite(parsedAmount) ? parsedAmount : 0;
+  const parsedAmount: number = parseFloat(amountInput);
+  const amount: number = Number.isFinite(parsedAmount) ? parsedAmount : 0;
 
   // List of possible banks and their data
   const bankData = useMemo(
